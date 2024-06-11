@@ -1,0 +1,1531 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background-color: black;
+}
+
+header{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+#btntop{    
+    border: 3px solid #fff;
+    padding: 1%; 
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+#btntop:hover, #studio:hover{
+    border-color: red;
+    color: red;
+}
+
+.btnmenu:hover{
+    border-bottom: 3px solid red;
+    color: red;
+}
+
+#free:hover{
+    background-color: rgba(255, 9, 9, 0.722);
+}
+
+#btncadH, #btncancelH{
+
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1070px) {
+
+    header{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        height: 8vh;
+    }
+
+    #btntop{
+        width: 10%;
+        font-size: 1.5vw;
+    }
+
+    nav{
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        margin-left: 2%;       
+    }
+
+    .btnmenu{
+        font-size: 1.5vw;
+        color: #fff;
+        width: 22%;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #first{      
+        background-image: url('IMG/wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 630px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #studio{
+        margin-top: 15%;
+        width: 30%;
+        text-align: center;
+        color: #fff;
+        font-size: 2vw;
+        border: 3px solid #fff;
+        padding: 1%;
+        cursor: pointer;
+    }
+
+    #studio, #free{
+        margin-left: 5%;
+    }
+
+    #free{
+        margin-top: 5%;
+        color: #fff;
+        width: 10%;
+        background-color: red;
+        text-align: center;
+        padding: 1%;
+        font-size: 1.2vw;
+        cursor: pointer;
+    }
+
+    #bonus{
+        background-color: rgb(41, 38, 38);
+        width: 100%;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 3%;
+    }
+
+    #titlebonus{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #titbn{
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #itemsall{
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+    }
+
+    #left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textitem1{
+        width: 100%;
+        height: 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textitem2{
+        width: 100%;
+        height: 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentitem1{       
+        width: 75%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 3%;
+    }
+
+    .contentitem2{
+        width: 75%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+    }
+
+    .txtct1{
+        color: #fff;
+        text-align: right;
+        font-size: 1vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .txtct2{
+        color: #fff;
+        text-align: left;
+        font-size: 1vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .cximgitem1{
+        background-color: rgb(255, 47, 47);
+        margin-right: 1%;
+        margin-left: 2%;
+        padding: 1%;
+        width: 10%;
+        height: 50%;     
+    }
+
+    .imgitem1{     
+        width: 100%;
+    }
+
+    .cximgitem2{
+        background-color: rgb(255, 47, 47);
+        margin-left: 1%;
+        margin-right: 2%;
+        padding: 1%;
+        width: 10%;
+        height: 50%;       
+    }
+
+    .imgitem2{      
+        width: 100%;
+    }
+
+    .subitem1{
+        font-size: 1.3vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #fff;
+        text-align: right;
+        margin-bottom: 2%;
+    }
+
+    .subitem2{
+        font-size: 1.3vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #fff;
+        text-align: left;
+        margin-bottom: 2%;
+    }
+
+    #second{    
+        padding-top: 2%;
+        padding-bottom: 4%;
+        height: 60vh;
+        background-color: rgb(255, 47, 47);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+    }
+
+    #centersecond{
+        width: 80%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content{     
+     
+        height: 100%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #initM, #initW{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .subsecond{
+        width: 100%;
+        text-align: center;
+        font-size: 2vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 10%;
+    }
+
+    #txtman{
+        width: 95%;
+        margin-top: 5%;    
+        font-size: 1.2vw;
+        text-align: right;
+        margin-top: 15%;
+        font-family: system-ui;
+    }
+
+    #txtwoman{
+        width: 95%;
+        margin-top: 5%;    
+        font-size: 1.2vw;
+        text-align: left;
+        margin-top: 15%;
+        margin-left: 5%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #cxmf{
+        width: 30%;
+        height: 60vh;
+    }
+
+    #imgmf{
+        width: 100%;
+        height: 100%;
+    }
+
+    .now{
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+        text-align: center;
+        margin-top: 15%;
+        color: #fff;
+        border: 3px solid #fff; 
+        padding: 3%;
+        cursor: pointer;
+    }
+
+    #adviseM, #adviseW {
+
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2vw;
+        margin-top: 5%;
+        font-family: system-ui;
+    }
+
+    #thankM, #thankW {
+        margin-top: 2%;
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2vw;
+        font-family: system-ui;
+        text-align: center;
+        
+    }
+
+    #formM, #formW{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        border-radius: 20px;
+        padding-bottom: 5%;
+    }
+
+    #titformM, #titformW{
+        margin-top: 5%;
+        margin-left: 8%;
+        font-size: 2vw;
+    }
+
+    #subformM, #subformW{
+        margin-left: 10%;
+    }
+
+    .labelM, .labelW{
+        color: #fff;
+        margin-left: 10%;
+        margin-top: 7%;
+    }
+
+    #input1M, #input2M, #input3M, #input1W, #input2W, #input3W{
+        width: 80%;
+        margin-left: 7%;
+        margin-top: 2%;   
+        height: 7%;    
+        border-radius: 10px;
+        padding-left: 2%;
+        height: 4vh;   
+
+    }
+
+    #validM, #validW{
+        
+        width: 100%;
+        height: 7vh; 
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    #txtvalidM, #txtvalidW{
+        width: 100%;
+        margin-top: 2%;
+        text-align: center;
+        width: 80%;
+        font-size: 1.1vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #divbtnsM, #divbtnsW{
+        margin-top: 3%;
+        gap: 10%;
+     
+    }
+
+    #btncadM, #btncancelM, #btncadW, #btncancelW{
+        margin-top: 5%;
+        width: 40%;
+        font-size: 1vw;
+        padding: 3%;
+        height: 80%;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #trainerssection{
+        width: 100%;
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(49, 44, 44);
+    }
+
+    #tittrainers{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #tittr{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 3vw; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #centertrainers{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 170vh;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+    }
+
+    .line{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .trainer{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #191a1a
+    }
+
+    .cxtrainer{
+        width: 100%;
+        height: 60%;
+    }
+
+    .imgtrainer{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenttrainer{
+        width: 90%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subtrainer{
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .txttrainer{
+        margin-top: 3%;
+        width: 100%;
+        text-align: center;
+        font-size: 1vw;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    footer{
+        background-color: rgb(41, 38, 38);
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+    }
+
+    .cxend{
+        width: 5%;
+        height: 40%;
+        cursor: pointer;
+    }
+
+    .imgend {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1070px) {
+
+    header{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        height: 8vh;
+    }
+
+    #btntop{
+        width: 20%;  
+        font-size: 3.3vw;       
+    }
+
+    nav{
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        margin-left: 10%;   
+    }
+
+    .btnmenu{
+        font-size: 3.3vw;
+        color: #fff;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #btnmenu1, #btnmenu3{
+        width: 30%;
+    }
+
+    #btnmenu2{
+        width: 25%;
+    }
+
+    #first{
+        background-image: url('IMG/wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        justify-content: center;
+    }
+
+    #studio{
+        width: 40%;
+        text-align: center;
+        color: #fff;
+        font-size: 3vw;
+        border: 3px solid #fff;
+        padding: 1%;
+        margin-top: 15%;
+    }
+
+    #studio, #free{
+        margin-left: 5%;
+    }
+
+    #free{
+        margin-top: 5%;
+        color: #fff;
+        width: 20%;
+        background-color: red;
+        text-align: center;
+        padding: 2%;
+        font-size: 2.5vw;
+        cursor: pointer;
+    }
+
+    #bonus{
+        background-color: rgb(41, 38, 38);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 6%;
+    }
+
+    #titlebonus{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #titbn{
+        width: 100%;
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    #itemsall{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    #left{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textitem1{
+        width: 100%;
+        height: 33%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;  
+    }
+
+    .textitem2{    
+        width: 100%;
+        height: 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+
+    .contentitem1{
+        width: 75%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        justify-content: center;
+    }
+
+    .contentitem2{
+
+        width: 75%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        justify-content: center;
+    }
+
+    .txtct1{
+        color: #fff;
+        text-align: left;
+        font-size: 3vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .txtct2{
+        color: #fff;
+        text-align: left;
+        font-size: 3vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .cximgitem1{
+        background-color: rgb(255, 47, 47);
+        padding: 1%;
+        width: 15%;
+        height: 70%;      
+    }
+
+    .imgitem1{       
+        width: 100%;
+    }
+
+    .cximgitem2{
+        background-color: rgb(255, 47, 47);
+        padding: 1%;
+        width: 15%;
+        height: 70%;        
+    }
+
+    .imgitem2{       
+        width: 100%;
+    }
+
+    .subitem1{
+        font-size: 4vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #fff;
+        text-align: left;
+        margin-bottom: 2%;
+    }
+
+    .subitem2{
+        font-size: 4vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #fff;
+        text-align: left;
+        margin-bottom: 2%;
+    }
+
+    #second{    
+        background-color: rgb(255, 47, 47);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        padding-bottom: 4%;
+        padding-top: 2%;
+    }
+
+    #centersecond{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #initM, #initW{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .subsecond{
+        margin-top: 10%;
+        width: 100%;
+        text-align: center;
+        font-size: 5vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    #txtman{
+        width: 100%;    
+        font-size: 3vw;
+        text-align: center;
+        margin-top: 4%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    #txtwoman{
+        width: 100%;  
+        font-size: 3vw;
+        text-align: center;
+        margin-top: 4%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #cxmf{
+        margin-top: 7%;
+        width: 30%;
+    }
+
+    #imgmf{
+        width: 100%;
+    }
+
+    .now{
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+        text-align: center;
+        margin-top: 4%;
+        color: #fff;
+        border: 3px solid #fff; 
+        padding: 3%;
+        cursor: pointer;
+        font-size: 3vw;
+    }
+
+    #adviseM, #adviseW{
+        margin-top: 7%;
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        font-family: system-ui;
+    }
+
+    #thankM, #thankW{
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        font-family: system-ui;
+    }
+
+    #formM, #formW{
+        width: 100%;
+        border-radius: 20px;
+        padding-bottom: 2%;
+    }
+
+    #titformM, #titformW{
+        width: 100%;
+        margin-top: 2%;
+        text-align: center;
+        font-size: 7vw;
+    }
+
+    #subformM, #subformW{
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .labelM, .labelW{
+        color: #fff;
+        margin-left: 10%;
+        margin-top: 7%;
+        font-size: 4vw;
+    }
+
+    #input1M, #input2M, #input3M, #input1W, #input2W, #input3W{
+        width: 80%;
+        margin-left: 7%;
+        margin-top: 2%;   
+        height: 60px;        
+        border-radius: 10px;
+        padding-left: 2%;
+        font-size: 3vw;
+    }
+
+    #validM, #validW{
+        width: 100%;
+        margin-top: 3%;
+        height: 13vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #txtvalidM, #txtvalidW{
+        width: 90%;
+        text-align: center;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3.3vw;
+    }
+
+    #divbtnsM, #divbtnsW{
+        margin-top: 5%;
+        height: 15%;
+        gap: 10%;
+    }
+
+    #btncadM, #btncancelM, #btncadW, #btncancelW{
+        width: 40%;
+        font-size: 1vw;
+        padding: 3%;
+        height: 80%;
+        font-size: 3vw;
+        border: 3px solid #fff;
+        border-radius: 10px;
+    }
+
+    #trainerssection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(49, 44, 44);
+    }
+
+    #tittrainers{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #tittr{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 7vw; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #centertrainers{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+    }
+
+    .line{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trainer{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #191a1a;
+        padding-bottom: 4%;
+    }
+
+    .cxtrainer{
+        width: 100%;
+        height: 30vh;
+
+    }
+
+    .imgtrainer{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenttrainer{
+        width: 90%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subtrainer{
+        margin-top: 7%;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .txttrainer{
+        margin-top: 7%;
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    footer{
+        background-color: rgb(41, 38, 38);
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12%;
+    }
+
+    .cxend{
+        width: 9%;
+        height: 45%;
+        cursor: pointer;
+    }
+
+    .imgend {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+
+    header{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #btntop{
+        width: 20%;
+        font-size: 3.7vw;
+    }
+
+    nav{
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        margin-left: 10%;     
+    }
+
+    .btnmenu{
+        font-size: 3.7vw;
+        color: #fff;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #btnmenu1, #btnmenu3{
+        width: 30%;
+    }
+
+    #btnmenu2{
+        width: 25%;
+    }
+
+    #first{
+        background-image: url('IMG/wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    #studio{
+        width: 45%;
+        text-align: center;
+        color: #fff;
+        font-size: 3.5vw;
+        border: 3px solid #fff;
+        padding: 2%;
+    }
+
+    #free, #studio{
+        margin-left: 5%;
+    }
+
+    #free{
+        color: #fff;
+        width: 25%;
+        background-color: red;
+        text-align: center;
+        padding: 2%;
+        font-size: 3vw;
+        cursor: pointer;
+        margin-top: 5%; 
+    }
+
+    #bonus{
+        background-color: rgb(41, 38, 38);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 6%;
+    }
+
+    #titlebonus{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #titbn{
+        width: 100%;
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    #itemsall{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    #left{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textitem1{
+        width: 100%;
+        height: 33%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .textitem2{      
+        width: 100%;
+        height: 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentitem1{
+        width: 75%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        justify-content: center;
+    }
+
+    .contentitem2{
+        width: 75%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        justify-content: center;
+    }
+
+    .txtct1{
+        color: #fff;
+        text-align: left;
+        font-size: 3.8vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .txtct2{
+        color: #fff;
+        text-align: left;
+        font-size: 3.8vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .cximgitem1{
+        background-color: rgb(255, 47, 47);
+        padding: 1%;
+        width: 15%;
+        height: 70%;      
+    }
+
+    .imgitem1{      
+        width: 100%;
+    }
+
+    .cximgitem2{
+        background-color: rgb(255, 47, 47);
+        padding: 1%;
+        width: 15%;
+        height: 70%;      
+    }
+
+    .imgitem2{       
+        width: 100%;
+    }
+
+    .subitem1{
+        font-size: 5vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #fff;
+        text-align: left;
+        margin-bottom: 2%;
+    }
+
+    .subitem2{
+        font-size: 5vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #fff;
+        text-align: left;
+        margin-bottom: 2%;
+    }
+
+    #second{    
+        background-color: rgb(255, 47, 47);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        padding-bottom: 4%;
+    }
+
+    #centersecond{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #initM, #initW{
+
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subsecond{
+        margin-top: 10%;
+        width: 100%;
+        text-align: center;
+        font-size: 6vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    #txtman{
+        width: 100%;    
+        font-size: 4vw;
+        text-align: center;
+        margin-top: 4%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    #txtwoman{
+        width: 100%;  
+        font-size: 4vw;
+        text-align: center;
+        margin-top: 4%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #cxmf{
+        margin-top: 7%;
+        width: 30%;
+    }
+
+    #imgmf{
+        width: 100%;
+    }
+
+    .now{
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+        text-align: center;
+        margin-top: 8%;
+        color: #fff;
+        border: 3px solid #fff; 
+        padding: 3%;
+        cursor: pointer;
+        font-size: 4vw;
+    }
+
+    #adviseM, #adviseW{
+        margin-top: 5%;
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+        font-family: system-ui;
+    }
+
+    #thankM, #thankW{
+
+        margin-top: 2%;
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+        font-family: system-ui;
+    }
+
+    #formM, #formW{
+        width: 100%;
+        padding-bottom: 2%;
+    }
+
+    #titformM, #titformW{
+        width: 100%;
+        margin-top: 2%;
+        text-align: center;
+        font-size: 9vw;
+    }
+
+    #subformM, #subformW{
+        width: 100%;
+        text-align: center;
+        font-size: 6vw;
+    }
+
+    .labelM, .labelW{
+        color: #fff;
+        margin-left: 10%;
+        margin-top: 7%;
+        font-size: 6vw;
+    }
+
+    #input1M, #input2M, #input3M, #input1W, #input2W, #input3W{
+        width: 80%;
+        margin-left: 7%;
+        margin-top: 2%;   
+        height: 5vh;        
+        border-radius: 10px;
+        padding-left: 2%;
+    }
+
+    #validM, #validW{
+        width: 100%;
+        margin-top: 5%;
+        height: 8vh; 
+    }
+
+    #txtvalidM, #txtvalidW{
+        width: 90%;
+        margin-top: 2%;
+        text-align: center;
+        font-size: 4.5vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #divbtnsM, #divbtnsW{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        height: 15%;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+    }
+
+    #btncadM, #btncancelM, #btncancelW, #btncadW{
+        width: 60%;
+        font-size: 1vw;
+        padding: 3%;
+        height: 80%;
+        font-size: 6vw;
+        border: 3px solid #fff;
+        border-radius: 10px;
+    }
+
+    #trainerssection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(49, 44, 44);
+    }
+
+    #tittrainers{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #tittr{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 8vw; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #centertrainers{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+    }
+
+    .line{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trainer{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #191a1a;
+        padding-bottom: 4%;
+    }
+
+    .cxtrainer{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .imgtrainer{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenttrainer{
+        width: 90%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subtrainer{
+        margin-top: 7%;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 7vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .txttrainer{
+        margin-top: 7%;
+        width: 100%;
+        text-align: center;
+        font-size: 4.5vw;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    footer{
+        background-color: rgb(41, 38, 38);
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12%;
+    }
+
+    .cxend{
+        width: 9%;
+        height: 45%;
+        cursor: pointer;
+    }
+
+    .imgend {
+        width: 100%;
+        height: 100%;
+    }
+}
